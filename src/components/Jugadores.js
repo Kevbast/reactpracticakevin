@@ -33,7 +33,7 @@ axios.get(this.url+request).then(response=>{
 
 
 componentDidMount = () => {
-  if (this.props.idEquipo !== undefined && this.props.idEquipo !== null && this.props.idEquipo !== 0) {
+  if (this.props.idEquipo!== 0) {
     this.loadJugadoresporID();
   }
   if (this.props.nombre && this.props.nombre.trim().length > 0) {
